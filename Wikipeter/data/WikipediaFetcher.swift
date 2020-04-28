@@ -32,4 +32,26 @@ class WikipediaFetcher {
             ])
     }
 
+    public func getArticlesNearby(latitude: Double, longitude: Double, completionHandler: @escaping ([Result]) -> Void) {
+        let url = buildGeosearchURL(languageCode: "de", latitude: latitude, longitude: longitude, radius: 10000, limit: 125)
+        
+        let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in
+            if let error = error {
+                print("Error with fetching locations: \(error)")
+                return
+            }
+
+            guard let httpResponse = response as? HTTPURLResponse,
+                (200...299).contains(httpResponse.statusCode) else {
+                    print("Error with the response, unexpected status code: \(String(describing: response))")
+                    return
+            }
+
+            if let data = data,
+                let geoSearch = try? JSONDecoder().decode(SearchResult.self, from: data) {
+                completionHandler(geoSearch.query.geosearch)
+            }
+        }
+        task.resume()
+    }
 }
