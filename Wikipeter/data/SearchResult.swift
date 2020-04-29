@@ -16,7 +16,7 @@ class Query: Decodable {
     let geosearch: [Result]
 }
 
-class Result: Decodable, Identifiable, ObservableObject {
+class Result: NSObject, Decodable, Identifiable, ObservableObject {
     let pageid: Int
     let title: String
     let lat: Double
