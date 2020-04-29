@@ -18,6 +18,8 @@
 		3A2B56FA24582CC100D582B1 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2B56F924582CC100D582B1 /* LocationManager.swift */; };
 		3A2B570024583D7300D582B1 /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2B56FF24583D7300D582B1 /* SearchResult.swift */; };
 		3A2B5702245844AB00D582B1 /* SearchResultRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2B5701245844AB00D582B1 /* SearchResultRow.swift */; };
+		3AD0130F24596F8D009ED05C /* ArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD0130E24596F8D009ED05C /* ArticleView.swift */; };
+		3AD01311245982BA009ED05C /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD01310245982BA009ED05C /* WebView.swift */; };
 		3AFFE77B24584B6700241CC9 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFFE77A24584B6700241CC9 /* MapView.swift */; };
 		3AFFE77F24587D2900241CC9 /* WikipediaFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFFE77E24587D2900241CC9 /* WikipediaFetcher.swift */; };
 		3AFFE7832458C4CF00241CC9 /* NumberUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFFE7822458C4CF00241CC9 /* NumberUtils.swift */; };
@@ -58,6 +60,8 @@
 		3A2B56F924582CC100D582B1 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		3A2B56FF24583D7300D582B1 /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
 		3A2B5701245844AB00D582B1 /* SearchResultRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultRow.swift; sourceTree = "<group>"; };
+		3AD0130E24596F8D009ED05C /* ArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleView.swift; sourceTree = "<group>"; };
+		3AD01310245982BA009ED05C /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		3AFFE77A24584B6700241CC9 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		3AFFE77E24587D2900241CC9 /* WikipediaFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikipediaFetcher.swift; sourceTree = "<group>"; };
 		3AFFE7822458C4CF00241CC9 /* NumberUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberUtils.swift; sourceTree = "<group>"; };
@@ -156,6 +160,8 @@
 			children = (
 				3A2B5701245844AB00D582B1 /* SearchResultRow.swift */,
 				3AFFE77A24584B6700241CC9 /* MapView.swift */,
+				3AD0130E24596F8D009ED05C /* ArticleView.swift */,
+				3AD01310245982BA009ED05C /* WebView.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -316,8 +322,10 @@
 				3A2B56FA24582CC100D582B1 /* LocationManager.swift in Sources */,
 				3AFFE7832458C4CF00241CC9 /* NumberUtils.swift in Sources */,
 				3A2B56C8245815BA00D582B1 /* SceneDelegate.swift in Sources */,
+				3AD0130F24596F8D009ED05C /* ArticleView.swift in Sources */,
 				3A2B570024583D7300D582B1 /* SearchResult.swift in Sources */,
 				3A2B56CA245815BA00D582B1 /* ContentView.swift in Sources */,
+				3AD01311245982BA009ED05C /* WebView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,6 +495,7 @@
 				DEVELOPMENT_TEAM = HJGSLZ3D52;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Wikipeter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -507,6 +516,7 @@
 				DEVELOPMENT_TEAM = HJGSLZ3D52;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Wikipeter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
